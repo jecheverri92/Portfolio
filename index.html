@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Julian Echeverri R.</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').click(function() {
+            var destino = $(this.hash);
+            if (destino.length == 0) {
+                destino = $('a[name="' + this.hash.substr(1) + '"]');
+            }
+            if (destino.length == 0) {
+                destino = $('html');
+            }
+            $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+            return false;
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<aside>
+<nav>
+    <img src="people2.jpg" alt="">
+    <a href="#home"><i class="material-icons md-36">home</i>
+    <p>Home</p>
+    </a>
+
+    <a href="#about"><i class="material-icons md-36">person</i>
+    <p>About</p>
+    </a>
+
+    <a href="#folio"><i class="material-icons md-36">image</i>
+    <p>Folio</p>
+    </a>
+
+    <a href="#contact"><i class="material-icons md-36">mail</i>
+    <p>Contact</p>
+    </a>
+
+</nav>
+</aside>
+
+    <nav class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#folio">Folio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <header class="home" id="home">
+            <br><br>
+            <h1>Julian Echeverri R.</h1>
+            <h5>Desarrollador // Frontend</h5>
+            <img src="people2.jpg" alt="">
+        </header>
+    </main>
+    <section class="about" id="about">
+        <h2>About me</h2>
+        <p>
+            <span>Hola, Soy Julian Echeverri</span> Soy Ingeniero electronico por formacion, apasionado por el Desarrollo Web, y estoy listo para nuevas oportunidades. He aprendido desarrollo web de forma autonoma con la ayuda de cursos online y ha llegado el momento de aplicar todo lo que he aprendido.  
+        </p>
+        <p>
+            He aprendido Html, Css, JavaScript, Boostrap y Git. Aunque me falta mucho que aprender me siento preparado para ser parte de alguna empresa de desarrollo.
+        </p>
+        <h3>My Skills</h3>
+        <p>Html 5</p>
+        <div class="container">
+            <div class="skills html">85%</div>
+        </div>   
+
+        <p>CSS 3</p>
+        <div class="container">
+            <div class="skills css">80%</div>
+        </div>  
+
+        <p>JavaScript</p>
+        <div class="container">
+            <div class="skills js">80%</div>
+        </div>   
+        
+        <p>Jquery</p>
+        <div class="container">
+            <div class="skills jq">10%</div>
+        </div>  
+    </section>
+    <section class="folio" id="folio">
+        <h2>Folio</h2>
+        <div class="row-halves">
+            <div class="col">
+                <img src="people1.jpeg" alt="">
+                <h3>Business</h3>
+                <p>
+                    Building Responsive and thoughtful sites for small an large business
+                </p>
+            </div>
+            <div class="col">
+                <img src="people2.jpg" alt="">
+                <h3>Mobile</h3>
+                <p>
+                    Fully Responsive, mobile ready desings and implemention for all
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row-halves">
+            <div class="col">
+                <img src="people1.jpeg" alt="">
+                <h3>UX Desing</h3>
+                <p>
+                    Thougtful and intuitive user experiences. All of my desing will be guaranteed to wor ypur clients
+                </p>
+            </div>
+            <div class="col">
+                <img src="people1.jpeg" alt="">
+                <h3>Personal</h3>
+                <p>
+                    I also desing and build for personal projects. no ideas is too small and everyone deserves a voice on the web
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" style="height:200px"></textarea>
+                <input type="submit" value="message">
+            </form>
+        </div>
+    </section>
+
+    <footer>    
+        <section class="top-bar">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </section>
+
+        <section class="bottom-bar">
+            <p>@copy 2018 | All rights reserved</p>
+        </section>
+    </footer>
+
+
+
+</body>
+</html>
